@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Staatliches&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container{
+    background-color: rgb(100, 85, 70);
+}
+
+.nav-bar ul{
+    display: flex;
+    list-style: none;
+   
+}
+
+.nav{
+    display: flex;
+}
+.nav h1{
+    float: left;
+}
+
+p{
+    margin-left: 40px;
+}
+
+.nav-bar ul li{
+   padding: 2px;
+   float: right;
+}
+
+.nav-bar ul li a{
+    width: 100%;
+    margin: 20px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.container{
+    display: flex;
+}
+
+.left{
+    float: left;
+    font-family: 'Poppins', sans-serif;
+}
+
+.left h2{
+    color: cornflowerblue;
+    text-align: center;  
+    margin: 5px; 
+}
+
+.about-us{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+.box{
+    width: 250px;
+    height: 200px;
+    background-color: black;
+    margin: 20px;
+    opacity: calc(0.1);
+}
+
+
+.batches{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+.batch{
+    width: 250px;
+    height: 200px;
+    background-color: aquamarine;
+    margin: 20px; 
+    opacity: calc(0.5); 
+}
+
+.batch h4{
+    justify-items: center;
+}
+
+.contact-us{
+    display: flex;
+    margin: 15px;
+    
+}
+
+.frm{
+    justify-content: center;
+}
+
+.frm h3{
+    text-align: center;
+    
+}
+
+.frm-input{
+    margin: 20px;
+    display: flex;
+}
+
+#sec2{
+    width: 100%;
+    background-color: white;
+    justify-content: center;
+}
+
+
+
+#sec4{
+    background-color: white;
+}
+
