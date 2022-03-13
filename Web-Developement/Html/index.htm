@@ -11,7 +11,6 @@
     <div class="main-container">
         <section id="sec1">
             <div class="nav">
-                <h1>FORK INFOSYSTEM</h1>
                 <nav class="nav-bar">
                     <ul>
                         <li><a href="#">Home</a></li>
@@ -38,6 +37,7 @@
    
 
     <section id="sec2">
+        <h2>About Us</h2>
         <div class="about-us">
             <div class="box">
 
@@ -56,6 +56,7 @@
     </section>
 
     <section id="sec3">
+        <h2>Batches</h2>
         <div class="batches">
             <div class="batch">
                <h4>C Programming</h4>
@@ -71,21 +72,25 @@
             </div>
         </div>
     </section>
-
+     <hr>
     <section id="sec4">
-        <div class="contact-us">
-          <div class="frm">
-              <h3>Contact Us</h3>
-              <form action="">
-                <input type="text" class="frm-input">
-                <input type="text" class="frm-input">
-                <input type="text" class="frm-input">
-                <input type="text" class="frm-input">
-              </form>
-              
-          </div>
+        <div class="container">
+            <div class="contact-us">
+                <div class="frm">
+                    <h2>Contact Us</h2>
+                    <form action="">
+                      <input type="text" class="frm-input" placeholder="Name" id="name">
+                      <input type="text" class="frm-input" placeholder="College" id="college">
+                      <input type="text" class="frm-input" placeholder="Mobile No" id="mobileno">
+                      <input type="text" class="frm-input" placeholder="Email" id="email">
+                    </form>
+                    <button type="submit" class="btn" onclick="getData()">Submit</button>
+                </div>
+              </div>
         </div>
       
     </section>
+
+    <script src="../Js/index.js"></script>
 </body>
 </html>

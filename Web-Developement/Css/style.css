@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Poppins:wght@400;700&family=Staatliches&display=swap');
 
 *{
     margin: 0;
@@ -14,14 +13,6 @@
 .nav-bar ul{
     display: flex;
     list-style: none;
-   
-}
-
-.nav{
-    display: flex;
-}
-.nav h1{
-    float: left;
 }
 
 p{
@@ -34,7 +25,6 @@ p{
 }
 
 .nav-bar ul li a{
-    width: 100%;
     margin: 20px;
     text-decoration: none;
     color: aliceblue;
@@ -42,6 +32,8 @@ p{
 
 .container{
     display: flex;
+    justify-content: center;
+    margin-top: 15px;
 }
 
 .left{
@@ -53,10 +45,6 @@ p{
     color: cornflowerblue;
     text-align: center;  
     margin: 5px; 
-}
-
-.right{
-  
 }
 
 .about-us{
@@ -86,30 +74,55 @@ p{
     background-color: aquamarine;
     margin: 20px; 
     opacity: calc(0.5); 
+    justify-content: center;
+    display: flex;
 }
 
 .batch h4{
-    justify-items: center;
+    margin-top: 10px;
+    color: brown;
 }
 
 .contact-us{
-    display: flex;
     margin: 15px;
-    
+    justify-content: center;
+    background-color: antiquewhite;
 }
 
 .frm{
     justify-content: center;
+    background-color: aliceblue;
+    height: 345px;
+    padding: 10px;
 }
 
-.frm h3{
+.frm h2{
     text-align: center;
-    
+    margin-top: 15px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .frm-input{
-    margin: 20px;
+    margin: 25px;
     display: flex;
+    width: 200px;
+    height: 25px;
+}
+
+.btn{
+    margin-left: 70px;
+    width: 80px;
+    height: 30px;
+    justify-content: center;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Fredoka', sans-serif;
+    cursor: pointer;
+    color: dodgerblue;
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #sec2{
