@@ -8,11 +8,18 @@
 
 .main-container{
     background-color: rgb(100, 85, 70);
+    height: 60px;
 }
 
 .nav-bar ul{
     display: flex;
     list-style: none;
+}
+
+.nav{
+    display: flex;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 p{
@@ -21,7 +28,7 @@ p{
 
 .nav-bar ul li{
    padding: 2px;
-   float: right;
+   font-size: 25px;
 }
 
 .nav-bar ul li a{
@@ -42,9 +49,12 @@ p{
 }
 
 .left h2{
-    color: cornflowerblue;
+    color: maroon;
     text-align: center;  
     margin: 5px; 
+    font-weight: bold;
+    font-size: 40px;
+    font-family: 'Fredoka', sans-serif;
 }
 
 .about-us{
@@ -68,7 +78,7 @@ p{
     margin: 15px;
 }
 
-.batch{
+.batch,.batch1{
     width: 250px;
     height: 200px;
     background-color: aquamarine;
@@ -76,6 +86,10 @@ p{
     opacity: calc(0.5); 
     justify-content: center;
     display: flex;
+}
+
+.batches .batch .para{
+    margin-top: 10px;
 }
 
 .batch h4{
@@ -125,7 +139,7 @@ p{
     margin-bottom: 10px;
 }
 
-#sec2{
+#sec2 h2{
     width: 100%;
     background-color: white;
     justify-content: center;
