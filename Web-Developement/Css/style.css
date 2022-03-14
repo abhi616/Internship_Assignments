@@ -67,7 +67,7 @@ p{
 
 .box{
     width: 250px;
-    height: 200px;
+    height: 250px;
     background-color: black;
     margin: 20px;
     opacity: calc(0.1);
@@ -90,14 +90,22 @@ p{
     display: flex;
 }
 
-.batches .batch .para{
-    margin-top: 10px;
+.batches .batch .about-batch,.batches .batch1 .about-batch{
+    margin-top: 35px;
+    color: blue;
+    position: absolute;
+    display: inline-block;
+    height: 70px;
+    width: 180px;
+    justify-content: center;
+    margin-left: 15px;
 }
 
 .batch h4{
     margin-top: 10px;
     color: brown;
 }
+
 
 .contact-us{
     margin: 15px;
