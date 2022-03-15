@@ -7,7 +7,7 @@
 }
 
 .main-container{
-    background-color: rgb(100, 85, 70);
+    background-color: rgb(161, 204, 202);
     height: 60px;
 }
 
@@ -25,6 +25,7 @@
 .nav h1{
     font-family: 'Oswald', sans-serif;
     font-weight: bpld;
+    color: rgb(226, 76, 76);
 }
 
 h2{
@@ -44,9 +45,14 @@ p{
 .nav-bar ul li a{
     margin: 20px;
     text-decoration: none;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
+    padding: 5px;
 }
 
+.nav-bar ul li a:hover{
+    border: solid 2px rgb(190, 130, 60);
+    background-color: rgb(211, 231, 165);
+}
 .container{
     display: flex;
     justify-content: center;
@@ -125,9 +131,9 @@ p{
  
 
 .contact-us{
-    margin: 80px;
+    margin: 65px;
     justify-content: center;
-    background-color: rgb(99, 223, 245);
+    background-color: rgb(183, 238, 248);
     width: 280px;
     height: 345px;
     padding: 10px;
