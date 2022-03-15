@@ -28,6 +28,7 @@ h2{
 
 p{
     margin-left: 40px;
+    margin-top: 20px;
 }
 
 .nav-bar ul li{
@@ -80,11 +81,11 @@ p{
     display: flex;
     justify-content: center;
     margin: 15px;
-    background-color: antiquewhite;
+   /* background-color: antiquewhite;*/
 }
 
 .batch,.batch1{
-    width: 500px;
+    width: 650px;
     height: 250px;
    background-color: aquamarine;
     margin: 20px; 
@@ -118,10 +119,11 @@ p{
 .contact-us{
     margin: 80px;
     justify-content: center;
-    background-color: aliceblue;
+    background-color: rgb(99, 223, 245);
     width: 280px;
     height: 345px;
     padding: 10px;
+    margin-left: 35%;
 }
 
 
@@ -160,6 +162,7 @@ h2{
     background-color: blanchedalmond;
     align-items: center;
     font-family: 'Poppins', sans-serif;
+    font-size: 30px;
 }
 
 #sec4{
@@ -171,9 +174,14 @@ h2{
 }
 
 .btn-apply{
-    width: 130px;
+    width: 100px;
     height: 30px;
     margin-top: 160px;
-    margin-left: 5px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.btn-apply a{
+    text-decoration: none;
 }
 
