@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Poppins:wght@400;700&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Oswald:wght@700&family=Poppins:wght@400;700&family=Staatliches&display=swap');
 
 *{
     margin: 0;
@@ -14,12 +14,17 @@
 .nav-bar ul{
     display: flex;
     list-style: none;
+    float: right;
 }
 
 .nav{
     display: flex;
     font-size: 25px;
     font-weight: bold;
+}
+
+.nav h1{
+    font-family: 'Oswald', sans-serif;
 }
 
 h2{
