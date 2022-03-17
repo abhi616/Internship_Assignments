@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap');
+
+*
+{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.main
+{
+   display: flex;
+   width: 700px;
+   height: 500px;
+   margin-left: 250px;
+   justify-content: center;
+   margin-top: 50px;
+   background-image: url("../Images/login.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.frm-login{
+    display: flex;
+    width: 340px;
+    height: 400px;
+    background-color: black;
+    margin-top: 50px;
+    opacity: calc(0.5);
+}
+
+.head{
+    flex-direction: column;
+    text-align: center;
+}
+
+.head h2{
+    color: crimson;
+    font-weight: bold;
+    margin-top: 10px;
+    justify-self: center;
+}
+
+.user,.pass{
+    margin: 30px;
+    margin-top: 60px;
+}
+
+.lbl-user , .lbl-pass{
+    color: mediumspringgreen;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.btn-login{
+    width: 90px;
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: yellow;
+    border: solid yellow 2px;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 17px;
+    margin-left: 65px;
+}
+
+.frm-input{
+    margin-top: 15px;
+    width: 180px;
+    height: 30px;
+}
