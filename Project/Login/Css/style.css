@@ -27,6 +27,7 @@
     background-color: black;
     margin-top: 50px;
     opacity: calc(0.5);
+    flex-direction: column;
 }
 
 .head{
@@ -44,6 +45,7 @@
 .user,.pass{
     margin: 30px;
     margin-top: 60px;
+    margin-left: 70px;
 }
 
 .lbl-user , .lbl-pass{
@@ -64,11 +66,16 @@
     background-color: transparent;
     cursor: pointer;
     font-size: 17px;
-    margin-left: 65px;
+    margin-left: 100px;
 }
 
 .frm-input{
     margin-top: 15px;
     width: 180px;
     height: 30px;
+}
+
+.frm-log{
+    display: flex;
+    align-content: center;
 }

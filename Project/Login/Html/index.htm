@@ -17,19 +17,21 @@
                 <form action="">
                     <div class="user">
                         <lbl class="lbl-user">Username</lbl>
-                        <input type="text" class="frm-input" placeholder="Enter Your Username" minlength="5" maxlength="15">
+                        <input type="text" class="frm-input" placeholder="Enter Your Username" minlength="5" maxlength="15" id="user" autocomplete="off">
                     </div>
                     <div class="pass">
                         <lbl class="lbl-pass">Password</lbl>
-                        <input type="password" class="frm-input" placeholder="Enter Your Password" minlength="8" maxlength="16">
+                        <input type="password" class="frm-input" placeholder="Enter Your Password" minlength="8" maxlength="16" id="pass" autocomplete="off">
                     </div>
                     <div class="btn">
-                        <button type="button" class="btn-login">Login</button>
+                        <button type="button" class="btn-login" onclick="login()">Login</button>
                     </div>
                 </form>
             </div>
           
         </div>
     </div>
+
+    <script src="../Js/script.js"></script>
 </body>
 </html>
