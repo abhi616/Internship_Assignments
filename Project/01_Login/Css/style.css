@@ -7,27 +7,37 @@
    box-sizing: border-box;
 }
 
+body{
+    background-image: url("../Images/login.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .main
 {
    display: flex;
    width: 700px;
    height: 500px;
-   margin-left: 250px;
+   margin-left: 370px;
    justify-content: center;
-   margin-top: 50px;
-   background-image: url("../Images/login.jpg");
-   background-repeat: no-repeat;
-   background-size: cover;
+   margin-top: 80px;
+   margin-bottom: 50px;
 }
 
 .frm-login{
     display: flex;
-    width: 340px;
-    height: 400px;
+    width: 500px;
+    height: 450px;
     background-color: black;
     margin-top: 50px;
     opacity: calc(0.5);
     flex-direction: column;
+    
+}
+
+.frm-log{
+    display: flex;
+    align-content: center;
 }
 
 .head{
@@ -37,9 +47,10 @@
 
 .head h2{
     color: crimson;
-    font-weight: bold;
     margin-top: 10px;
     justify-self: center;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .user,.pass{
@@ -54,6 +65,12 @@
     margin-bottom: 10px;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
+    font-size: 20px;
+}
+
+.btn{
+    padding-top: 40px;
+    margin-left: 50px;
 }
 
 .btn-login{
@@ -66,16 +83,12 @@
     background-color: transparent;
     cursor: pointer;
     font-size: 17px;
-    margin-left: 100px;
+    margin-left: 120px;
 }
 
 .frm-input{
     margin-top: 15px;
-    width: 180px;
-    height: 30px;
-}
-
-.frm-log{
-    display: flex;
-    align-content: center;
+    width: 200px;
+    height: 35px;
+    margin-left: 15px;
 }
