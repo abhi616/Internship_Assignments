@@ -11,13 +11,63 @@
     <div class="main-container">
       <div class="head">
           <div class="btn">
-            <button class="back">Back</button>
+            <button class="back"><a href="/01_Login/Html/index.htm">Back</a></button>
           </div>
           <div class="heading">
               <h1>Doctor Registration</h1>
           </div>
-          
       </div>
+      <div class="container">
+        <div class="personal-info">
+            <h5>Personal Information</h5>
+
+            <div class="Did">
+                <label for="DID" class="lblid">Doctor ID</label>
+                <input type="text" class="did" id="DID">
+            </div>
+
+            <div class="Name">
+                <label for="DfName" class="lblfname">First Name</label>
+                <input type="text" class="dfname" id="DfName" autocomplete="Off">
+                <label for="DmName" class="lblmname">Middle Name</label>
+                <input type="text" class="dmname" id="DmName" autocomplete="Off">
+                <label for="DsurName" class="lblsurname">Surname</label>
+                <input type="text" class="dsurname" id="DsurName" autocomplete="Off">
+            </div>
+
+            <div class="DOB">
+                <label for="Ddob" class="lbldob">DOB</label>
+                <input type="date" class="dDOb" id="Ddob">
+                <label for="DAge" class="lblage">Age</label>
+                <input type="text" class="dage" id="DAge">
+            </div>
+
+            <div class="Gen-Edu">
+                <label class="lblgen">Gender</label>
+                <input type="radio" name="Male" id="male" value="MALE">
+                <label for="male">Male</label>
+                <input type="radio" name="Female" id="female" value="FEMALE">
+                <label for="female">Female</label>
+                <label for="DEducation" class="edu">Education</label>
+                <input type="text" class="dedu" id="DEducation">
+            </div>
+           
+            <div class="other-info">
+              <h5>Contact Details</h5>
+            </div>
+        </div>
+      </div>
+
+      <div class="btn-container">
+        <div class="btn-save">
+          <button>Save</button>
+        </div>
+
+        <div class="btn-refresh">
+          <button>Refresh</button>
+        </div>
+      </div>
+      
     </div>
 </body>
 </html>

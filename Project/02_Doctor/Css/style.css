@@ -6,10 +6,6 @@
     box-sizing: border-box;
 }
 
-.main-container{
-    display: flex;
-}
-
 .head{
     display: flex;
     width: 100%;
@@ -24,16 +20,101 @@
     padding: 3px;
     width: 65px;
     font-weight: bold;
+    cursor: pointer;
 }
 
-
+.back a{
+    text-decoration: none;
+}
 
 .heading{
-    flex-direction: column;
-    margin-left: 350px;
+    /*flex-direction: column;*/
+    margin-left: 500px;
     font-family: 'Kanit', sans-serif;
     font-weight: bold;
     font-size: 20px;
     background-color: aliceblue;
     padding: 1px 5px;
+}
+
+.heading h1{
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.personal-info{
+    width: 900px;
+    height: 700px;
+    border: solid yellow 3px;
+    margin: 20px;
+}
+
+.personal-info h5,.other-info h5{
+   text-align: center;
+   margin-bottom: 10px;
+   margin-top: 20px;
+   font-size: 20px;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-save button,.btn-refresh button{
+    width: 200px;
+    height: 30px;
+    cursor: pointer;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: mediumslateblue;
+    background-color: black;
+    border-radius: 50px;
+}
+
+.btn-save{
+    margin-right: 100px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.btn-refresh{
+    margin-left: 100px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.Did{
+    margin: 10px;
+}
+
+.Did input{
+    margin: 10px;
+    width: 70px;
+}
+
+.Name,.dfname{
+    margin: 10px;
+}
+
+.lblsurname , .dsurname{
+    margin-left: 25px;
+}
+
+
+.DOB{
+    margin: 20px;
+}
+
+.lblage,.dage,.dDOb,.Gen-Edu label,.Gen-Edu input{
+    margin-left: 20px;
+}
+
+.Name label,.Did label,.DOB label,.lblgen,.edu{
+    font-weight: bold;
 }
