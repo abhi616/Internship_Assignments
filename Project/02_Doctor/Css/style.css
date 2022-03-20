@@ -47,9 +47,9 @@
 }
 
 .personal-info{
-    width: 900px;
-    height: 700px;
-    border: solid yellow 3px;
+    width: 1000px;
+    height: 1000px;
+    /* border: solid yellow 3px; */
     margin: 20px;
 }
 
