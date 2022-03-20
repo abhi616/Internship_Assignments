@@ -101,23 +101,13 @@
     width: 70px;
 }
 
-.Name,.dfname{
-    margin: 10px;
-}
-
-.lblsurname , .dsurname{
-    margin-left: 25px;
-}
-
-.DOB{
+.Did,.DOB,.Email label,.Email input,.lblage,.dage,.dDOb,.Gen-Edu label,.Gen-Edu input,.Mobile label,.Mobile input,.Name,.dfname,.lblsurname , .dsurname,.dmname{
     margin: 20px;
 }
 
-.lblage,.dage,.dDOb,.Gen-Edu label,.Gen-Edu input,.Mobile label,.Mobile input{
-    margin-left: 20px;
-}
-
-.Name label,.Did label,.DOB label,.lblgen,.edu,.Mobile label{
+.Name label,.Did label,.DOB label,.lblgen,.edu,.Mobile label,.Email label{
     font-weight: bold;
     font-size: 18px;
 }
+
+
