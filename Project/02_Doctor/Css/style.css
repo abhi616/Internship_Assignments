@@ -10,8 +10,12 @@
     display: flex;
     width: 100%;
     height: 70px;
-    background-color: aquamarine;
+    background-color: rgb(34, 107, 167);
     align-items: center;
+}
+
+.dtp{
+    margin: auto;
 }
 
 .btn button{  
@@ -48,7 +52,7 @@
 
 .personal-info{
     width: 1000px;
-    height: 1000px;
+    height: 800px;
     /* border: solid yellow 3px; */
     margin: 20px;
 }
@@ -101,11 +105,11 @@
     width: 70px;
 }
 
-.Did,.DOB,.Email label,.Email input,.lblage,.dage,.dDOb,.Gen-Edu label,.Gen-Edu input,.Mobile label,.Mobile input,.Name,.dfname,.lblsurname , .dsurname,.dmname{
+.Did,.DOB,.Email label,.Email input,.lblage,.dage,.dDOb,.Gen-Edu label,.Gen-Edu input,.Mobile label,.Mobile input,.Name,.dfname,.lblsurname , .dsurname,.dmname,.Aadhaar label ,.Aadhaar input{
     margin: 20px;
 }
 
-.Name label,.Did label,.DOB label,.lblgen,.edu,.Mobile label,.Email label{
+.Name label,.Did label,.DOB label,.lblgen,.edu,.Mobile label,.Email label,.Aadhaar label{
     font-weight: bold;
     font-size: 18px;
 }

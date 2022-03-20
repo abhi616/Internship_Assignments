@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../Css/style.css">
     <title>Doctor</title>
 </head>
-<body>
+<body onload="dateLoad()">
     <div class="main-container">
       <div class="head">
           <div class="btn">
@@ -16,12 +16,15 @@
           <div class="heading">
               <h1>Doctor Registration</h1>
           </div>
+          <div class="dtp">
+            <input type="date" id="Dtp">
+          </div>
       </div>
 
       <div class="container">
         <div class="personal-info">
             <h5>Personal Information</h5>
-
+   
             <div class="Did">
                 <label for="DID" class="lblid">Doctor ID</label>
                 <input type="text" class="did" id="DID" required>
@@ -67,6 +70,11 @@
               <div class="Email">
                 <label for="email">Email ID</label>
                 <input type="email" name="email" class="Email" id="email">
+              </div>
+
+              <div class="Aadhaar">
+                <label for="aadhaar">Aadhaar Number</label>
+                <input type="text" class="aadharno" id="aadhar" required>
               </div>
             </div>
         </div>
