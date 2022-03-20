@@ -55,9 +55,12 @@
 
 .personal-info h5,.other-info h5{
    text-align: center;
-   margin-bottom: 10px;
+   margin-bottom: 20px;
    margin-top: 20px;
-   font-size: 20px;
+   font-size: 25px;
+   background-color: cadetblue;
+   font-family: 'Staatliches', cursive;
+   padding: 10px;
 }
 
 .btn-container{
@@ -116,4 +119,5 @@
 
 .Name label,.Did label,.DOB label,.lblgen,.edu{
     font-weight: bold;
+    font-size: 18px;
 }
