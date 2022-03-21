@@ -12,10 +12,6 @@ body{
     background-size: cover;
 }
 
-.main-container{
-   /*background: linear-gradient(to top right,blue,red);
-    opacity: 0.4;*/
-}
 
 .navbar{
     width: 100%;
@@ -83,11 +79,20 @@ ul li a:hover{
 .personal-info,.Other-info{
     width: 1000px;
     height: 600px;
-    border: solid yellowgreen 5px;
+    border: solid yellowgreen 2px;
+    border-radius: 10px;
     margin-top: 20px;
     margin-left: 250px;
     text-align: center;
     padding: 10px;
+}
+
+.personal-info{
+    border-bottom: hidden;
+}
+
+.Other-info{
+    border-top: hidden;
 }
 
 .personal-info h5,.Other-info h5{
@@ -104,7 +109,7 @@ ul li a:hover{
     margin-bottom: 20px;
 }
 
-.Did ,.Name,.DOB,.Age,.Gender,.Education,.Mobile,.Alternate-no,.Email,.Aadhaar{
+.Doctor{
     padding: 10px;
 }
 
