@@ -6,112 +6,91 @@
     box-sizing: border-box;
 }
 
-.head{
-    display: flex;
+body{
+    background-image: url(../Images/Doctor_Background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-container{
+    background: linear-gradient(to top right,blue,red,0.4);
+}
+
+.navbar{
     width: 100%;
-    height: 70px;
-    background-color: rgb(34, 107, 167);
-    align-items: center;
-}
-
-.dtp{
+    height: 75px;
     margin: auto;
+    background-color: rgb(190, 219, 231);
 }
 
-.btn button{  
-    font-size: 20px;
-    margin-left: 10px;
-    padding: 3px;
-    width: 65px;
+.main-heading{
+    float: left;
+}
+
+.logo{
+    margin-top: 5px;
+    padding-left: 20px;
+    padding-top: 10px;
+    color: #dd6050;
+    font-size: 40px;
+    font-family: 'Fredoka', sans-serif;
     font-weight: bold;
-    cursor: pointer;
 }
 
-.back a{
+.menu{
+    float: right;
+    padding-right: 20px;
+}
+
+ul{
+    padding-left: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 400px;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 52px;
+    margin-top: 27px;
+    font-size: 14px;
+   
+}
+
+ul li a{
     text-decoration: none;
+    color: rgb(22, 22, 22);
+    font-family: Arial;
+    font-weight: bold;
+}
+
+ul li a:hover{
+    color: #6200ff;
 }
 
 .heading{
-    /*flex-direction: column;*/
-    margin-left: 500px;
-    font-family: 'Kanit', sans-serif;
-    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    color: indigo;
+    background-color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
-    background-color: aliceblue;
-    padding: 1px 5px;
+
 }
 
-.heading h1{
-    justify-content: center;
-}
-
-.container{
-    display: flex;
-    justify-content: center;
-}
-
-.personal-info{
+.personal-info,.other-info{
     width: 1000px;
-    height: 800px;
-    /* border: solid yellow 3px; */
-    margin: 20px;
-}
-
-.personal-info h5,.other-info h5{
-   text-align: center;
-   margin-bottom: 20px;
-   margin-top: 20px;
-   font-size: 25px;
-   background-color: cadetblue;
-   font-family: 'Staatliches', cursive;
-   padding: 10px;
-}
-
-.btn-container{
-    display: flex;
-    justify-content: center;
-}
-
-.btn-save button,.btn-refresh button{
-    width: 200px;
-    height: 30px;
-    cursor: pointer;
-    font-family: 'Fredoka', sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-    color: mediumslateblue;
-    background-color: black;
-    border-radius: 50px;
-}
-
-.btn-save{
-    margin-right: 100px;
-    margin-bottom: 15px;
+    height: 600px;
+    border: solid yellowgreen 5px;
     margin-top: 20px;
+    margin-left: 250px;
+    text-align: center;
+    padding: 10px;
 }
 
-.btn-refresh{
-    margin-left: 100px;
-    margin-bottom: 15px;
-    margin-top: 20px;
-}
-
-.Did{
-    margin: 10px;
-}
-
-.Did input{
-    margin: 10px;
-    width: 70px;
-}
-
-.Did,.DOB,.Email label,.Email input,.lblage,.dage,.dDOb,.Gen-Edu label,.Gen-Edu input,.Mobile label,.Mobile input,.Name,.dfname,.lblsurname , .dsurname,.dmname,.Aadhaar label ,.Aadhaar input{
-    margin: 20px;
-}
-
-.Name label,.Did label,.DOB label,.lblgen,.edu,.Mobile label,.Email label,.Aadhaar label{
+.personal-info h5{
+    padding: 10px;
     font-weight: bold;
     font-size: 18px;
 }
-
-

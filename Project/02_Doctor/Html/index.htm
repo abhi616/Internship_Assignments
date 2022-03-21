@@ -7,78 +7,102 @@
     <link rel="stylesheet" href="../Css/style.css">
     <title>Doctor</title>
 </head>
-<body onload="dateLoad()">
+<body>
+
+  <div class="navbar">
+    <div class="main-heading">
+        <h2 class="logo">Clinical Lab Management</h2>
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">SERVICE</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </div>
+ </div>
+
     <div class="main-container">
       <div class="head">
-          <div class="btn">
-            <button class="back"><a href="/01_Login/Html/index.htm">Back</a></button>
-          </div>
+         
           <div class="heading">
               <h1>Doctor Registration</h1>
           </div>
-          <div class="dtp">
-            <input type="date" id="Dtp">
-          </div>
+         
       </div>
 
-      <div class="container">
+       <div class="container">
         <div class="personal-info">
-            <h5>Personal Information</h5>
-   
-            <div class="Did">
-                <label for="DID" class="lblid">Doctor ID</label>
-                <input type="text" class="did" id="DID" required>
-            </div>
+          <h5>Personal Information</h5>
+ 
+          <div class="Did">
+              <label for="DID" class="lblid">Doctor ID</label>
+              <input type="text" class="did" id="DID" required>
+          </div>
 
-            <div class="Name">
-                <label for="DfName" class="lblfname">First Name</label>
-                <input type="text" class="dfname" id="DfName" autocomplete="Off" required>
-                <label for="DmName" class="lblmname">Middle Name</label>
-                <input type="text" class="dmname" id="DmName" autocomplete="Off" required>
-                <label for="DsurName" class="lblsurname">Surname</label>
-                <input type="text" class="dsurname" id="DsurName" autocomplete="Off" required>
-            </div>
+          <div class="Name">
+              <label for="DfName" class="lblfname">Full Name</label>
+              <input type="text" class="dfname" id="DfName" autocomplete="Off" placeholder="First Name" required>
+              
+              <input type="text" class="dmname" id="DmName" autocomplete="Off" placeholder="Middle Name" required>
+              
+              <input type="text" class="dsurname" id="DsurName" autocomplete="Off" placeholder="Last Name" required>
+          </div>
 
-            <div class="DOB">
-                <label for="Ddob" class="lbldob">DOB</label>
-                <input type="date" class="dDOb" id="Ddob" required>
-                <label for="DAge" class="lblage">Age</label>
-                <input type="text" class="dage" id="DAge" required>
-            </div>
+          <div class="DOB">
+              <label for="Ddob" class="lbldob">DOB</label>
+              <input type="date" class="dDOb" id="Ddob" required>
+          </div>
 
-            <div class="Gen-Edu">
+          <div class="age">
+              <label for="DAge" class="lblage">Age</label>
+              <input type="text" class="dage" id="DAge" required>
+          </div>
+
+          <div class="Gen">
+              <div class="cmb">
                 <label class="lblgen">Gender</label>
-                <input type="radio" name="Male" id="male" value="MALE">
-                <label for="male">Male</label>
-                <input type="radio" name="Female" id="female" value="FEMALE">
-                <label for="female">Female</label>
+                <select>
+                  <option value="java">Male</option>
+                  <option value="html">Female</option>
+                 </select>
+                </div>
+              </div>
+
+              <div class="Edu">
                 <label for="DEducation" class="edu">Education</label>
                 <input type="text" class="dedu" id="DEducation" required>
+              </div>
+
+            </div>  
+               
+          <div class="other-info">
+            <h5>Contact Details</h5>
+
+            <div class="Mobile">
+              <label for="mob">Mobile Number</label>
+              <input type="tel" class="mob-no" id="mob" required>
             </div>
-           
-            <div class="other-info">
-              <h5>Contact Details</h5>
 
-              <div class="Mobile">
-                <label for="mob">Mobile Number</label>
-                <input type="tel" class="mob-no" id="mob" required>
-
-                <label for="alternatemob">Alternate Number</label>
-                <input type="tel" class="mob-no" id="alternatemob">
-              </div>
-
-              <div class="Email">
-                <label for="email">Email ID</label>
-                <input type="email" name="email" class="Email" id="email">
-              </div>
-
-              <div class="Aadhaar">
-                <label for="aadhaar">Aadhaar Number</label>
-                <input type="text" class="aadharno" id="aadhar" required>
-              </div>
+            <div class="alternate-no">
+              <label for="alternatemob">Alternate Number</label>
+              <input type="tel" class="alternate" id="alternatemob">
             </div>
-        </div>
-      </div>
+
+            <div class="Email">
+              <label for="email">Email ID</label>
+              <input type="email" name="email" class="Email" id="email">
+            </div>
+
+            <div class="Aadhaar">
+              <label for="aadhaar">Aadhaar Number</label>
+              <input type="text" class="aadharno" id="aadhar" required>
+            </div>
+
+          </div>
+       </div>
+              
 
       <div class="btn-container">
         <div class="btn-save">
