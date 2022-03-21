@@ -12,7 +12,7 @@ function getData(){
     const alternateno = document.getElementById('alternatemob').value;
     const email = document.getElementById('email').value;
     const aadhar = document.getElementById('aadhaar').value;
-
+    const address = document.getElementById('address').value;
     alert(`Doctor Registered Successfully...
 
 Doctor ID : ${id}
@@ -24,7 +24,8 @@ Education : ${education}
 Mobile Number : ${mob}
 Alternate Number : ${alternateno}
 Email ID : ${email}
-Aadhaar Number : ${aadhar}`
+Aadhaar Number : ${aadhar}
+Address : ${address}`
 );
 
 }
@@ -42,5 +43,6 @@ function clrData(){
     document.getElementById('alternatemob').value = "";
     document.getElementById('email').value = "";
     document.getElementById('aadhaar').value = "";
+    document.getElementById('address').value = "";
     document.getElementById('Did').focus(); 
 }

@@ -160,6 +160,9 @@ button:hover{
       margin-left: 90px;
 }
 
+.Doctor .Address{
+    height: 70px;
+}
 
 
 .Doctor .Dob,.Doctor .Age{
