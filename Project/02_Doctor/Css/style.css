@@ -140,7 +140,7 @@ input,.cmb select{
     margin: 20px;
 }
 
-.btn-register button , .btn-refresh button{
+.btn-register button , .btn-refresh button,.btn-update button,.Doctor button{
     width: 200px;
     height: 40px;
     margin: 20px;
@@ -154,4 +154,16 @@ input,.cmb select{
 
 button:hover{
     border-color: whitesmoke;
+}
+
+.Doctor .Email{
+      margin-left: 90px;
+}
+
+.Doctor .Dob,.Doctor .Age{
+    margin-left: 50px;
+}
+
+.cmb .lbl{
+    margin-right: 20px;
 }

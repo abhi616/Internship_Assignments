@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../Css/style.css">
     <title>Doctor</title>
 </head>
-<body>
+<body onload="clrData()">
 
   <div class="navbar">
     <div class="main-heading">
@@ -37,35 +37,37 @@
           <hr class="hr1"><h5>Personal Information</h5><hr class="hr2">
  
           <div class="Doctor">
-              <label for="DID" class="lbl">Doctor ID</label>
-              <input type="text" class="did" id="DID" required>
+              <label for="Did" class="lbl">Doctor ID</label>
+              <input type="text" class="did" id="Did" required>
+
+              <button>Search</button>
           </div>
 
           <div class="Doctor">
-              <label for="DfName" class="lbl">Full Name</label>
+              <label class="lbl">Full Name</label>
               <input type="text" class="dfname" id="DfName" autocomplete="Off" placeholder="First Name" required>
               
               <input type="text" class="dmname" id="DmName" autocomplete="Off" placeholder="Middle Name" required>
               
-              <input type="text" class="dsurname" id="DsurName" autocomplete="Off" placeholder="Last Name" required>
+              <input type="text" class="dsurname" id="DSurName" autocomplete="Off" placeholder="Last Name" required>
           </div>
 
           <div class="Doctor">
               <label for="Ddob" class="lbl">DOB</label>
-              <input type="date" class="dDOb" id="Ddob" required>
+              <input type="date" class="Dob" id="Ddob" required>
           </div>
 
           <div class="Doctor">
               <label for="DAge" class="lbl">Age</label>
-              <input type="text" class="dage" id="DAge" required>
+              <input type="text" class="Age" id="DAge" required>
           </div>
 
           <div class="Doctor">
               <div class="cmb">
                 <label class="lbl">Gender</label>
-                <select>
-                  <option value="java">Male</option>
-                  <option value="html">Female</option>
+                <select id="Gen">
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
                  </select>
                 </div>
               </div>
@@ -82,22 +84,22 @@
 
             <div class="Doctor">
               <label for="mob" class="lbl">Mobile Number</label>
-              <input type="tel" class="mob-no" id="mob" required>
+              <input type="tel" class="mob-no" id="mob" minlength="10" maxlength="10" required>
             </div>
 
             <div class="Doctor">
               <label for="alternatemob" class="lbl">Alternate Number</label>
-              <input type="tel" class="alternate" id="alternatemob">
+              <input type="tel" class="alternate" id="alternatemob" minlength="10" maxlength="10">
             </div>
 
             <div class="Doctor">
               <label for="email" class="lbl">Email ID</label>
-              <input type="email" name="email" class="mail" id="email">
+              <input type="email" name="email" class="Email" id="email" autocomplete="off">
             </div>
 
             <div class="Doctor" class="lbl">
               <label for="aadhaar" class="lbl">Aadhaar Number</label>
-              <input type="text" class="aadharno" id="aadhar" required>
+              <input type="text" class="aadharno" id="aadhaar" required>
             </div>
 
           </div>
@@ -106,11 +108,15 @@
 
       <div class="btn-container">
         <div class="btn-register">
-          <button>Register Now</button>
+          <button onclick="getData()">Register Now</button>
         </div>
 
         <div class="btn-refresh">
-          <button>Refresh</button>
+          <button onclick="clrData()">Refresh</button>
+        </div>
+
+        <div class="btn-update">
+          <button onclick="updateData()">Update</button>
         </div>
       </div>
       
