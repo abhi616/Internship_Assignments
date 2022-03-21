@@ -156,9 +156,11 @@ button:hover{
     border-color: whitesmoke;
 }
 
-.Doctor .Email{
+.Doctor .Email,.Doctor .Address{
       margin-left: 90px;
 }
+
+
 
 .Doctor .Dob,.Doctor .Age{
     margin-left: 50px;
