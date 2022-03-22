@@ -20,10 +20,10 @@ function getData(){
     const disc = document.getElementById('discount').value;
     const payamt = document.getElementById('payamount').value;
 
-    alert(`Doctor Registered Successfully...
+    alert(`Patient Registered Successfully...!!!
 
-Doctor ID : ${id}
-Doctor Name : ${fullname}
+Patient ID : ${id}
+Patient Name : ${fullname}
 DOB : ${dob}
 Age : ${age}
 Gender : ${gen}
