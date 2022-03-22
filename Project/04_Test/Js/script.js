@@ -31,6 +31,6 @@ function clrData(){
     document.getElementById('testUprRange').value = "";
     document.getElementById('unit').value = "";
     document.getElementById('testCharges').value ="";
-    
+
     document.getElementById('id').focus(); 
 }
