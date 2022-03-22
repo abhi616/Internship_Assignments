@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/style.css">
+    <title>Test</title>
+</head>
+<body onload="clrData()">
+
+  <div class="navbar">
+    <div class="main-heading">
+        <h2 class="logo">Clinical Lab Management</h2>
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </div>
+ </div>
+
+    <div class="main-container">
+      <div class="head">
+         
+          <div class="heading">
+              <h1>Test Section</h1>
+          </div>
+         
+      </div>
+
+       <div class="container">
+            <div class="Test-info">
+            <hr class="hr1"><h5>Test Information</h5><hr class="hr2">
+    
+            <div class="Test">
+                <label for="id" class="lbl">Test ID</label>
+                <input type="text" class="id" id="id" required>
+
+                <button>Search</button>
+            </div>
+            
+            <div class="Test">
+                <label for="testCat" class="lbl">Test Category</label>
+                <input type="text" id="testCat" required>
+            </div>
+
+            <div class="Test">
+                <label for="testName" class="lbl tname">Test Name</label>
+                <input type="text" id="testName" required>
+            </div>
+
+            <div class="Test">
+                <label for="testDesc" class="lbl">Test Description</label>
+                <input type="text" class="desc" id="testDesc" required>
+            </div>
+
+            <div class="Test">
+                <label for="testLwrRange" class="lbl">Lower Range</label>
+                <input type="text" id="testLwrRange" required>
+            </div>
+
+            <div class="Test">
+                <label for="testUprRange" class="lbl">Upper Range</label>
+                <input type="text" id="testUprRange" required>
+            </div>
+
+            <div class="Test">
+                <label for="unit" class="lbl unit">Unit</label>
+                <input type="text" id="unit" required>
+            </div>
+
+            <div class="Test">
+                <label for="testCharges" class="lbl charges">Charges</label>
+                <input type="text" id="testCharges" required>
+            </div>
+
+      </div>  
+               
+ </div>
+              
+
+      <div class="btn-container">
+        <div class="btn-add">
+          <button onclick="getData()">Add Test</button>
+        </div>
+
+        <div class="btn-refresh">
+          <button onclick="clrData()">Refresh</button>
+        </div>
+
+        <div class="btn-update">
+          <button onclick="updateData()">Update Test</button>
+        </div>
+      </div>
+      
+    </div>
+
+    <script src="../Js/script.js"></script>
+</body>
+</html>

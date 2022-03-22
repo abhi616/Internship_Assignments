@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Kanit:wght@700&family=Oswald:wght@700&family=Poppins:wght@400;700&family=Staatliches&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../Images/Test_Background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.navbar{
+    width: 100%;
+    height: 75px;
+    margin: auto;
+    background-color: rgb(190, 219, 231);
+}
+
+.main-heading{
+    float: left;
+}
+
+.logo{
+    margin-top: 5px;
+    padding-left: 20px;
+    padding-top: 10px;
+    color: #dd6050;
+    font-size: 40px;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: bold;
+}
+
+.menu{
+    float: right;
+    padding-right: 20px;
+}
+
+ul{
+    padding-left: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 400px;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 52px;
+    margin-top: 27px;
+    font-size: 14px;
+   
+}
+
+ul li a{
+    text-decoration: none;
+    color: rgb(22, 22, 22);
+    font-family: Arial;
+    font-weight: bold;
+}
+
+ul li a:hover{
+    color: #6200ff;
+}
+
+.heading{
+    text-align: center;
+    padding: 10px;
+    color: indigo;
+    background-color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+
+}
+
+.Test-info{
+    width: 1000px;
+    height: 800px;
+    border: solid yellowgreen 2px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 250px;
+    text-align: center;
+    padding: 10px;
+}
+
+.Test-info h5{
+    padding: 10px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.hr1{
+    margin-top: 20px;
+}
+
+.hr2{
+    margin-bottom: 20px;
+}
+
+.Test{
+    padding: 10px;
+}
+
+.lbl{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-right: 20px;
+    color: black;
+}
+
+input{
+    width: 250px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.btn-add button , .btn-refresh button,.btn-update button,.Test button{
+    width: 200px;
+    height: 40px;
+    margin: 20px;
+    border-radius: 50px;
+    font-weight: bolder;
+    font-size: 20px;
+    background-color: black;
+    color: mediumspringgreen;
+    cursor: pointer;
+}
+
+button:hover{
+    border-color: whitesmoke;
+}
+
+.Test .unit{
+      margin-right: 90px;
+}
+
+.charges{
+    margin-right: 60px;
+}
+
+.tname{
+    margin-right: 40px;
+}
+
+.Test .desc{
+    height: 70px;
+}
+
+
+.Test .Dob,.Test .Age{
+    margin-left: 50px;
+}
+
+.cmb .lbl{
+    margin-right: 20px;
+}
