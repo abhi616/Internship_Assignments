@@ -41,7 +41,7 @@
               <input type="date" class="Dob" id="Ddob" required>
           
               <label for="DAge" class="lbl">Age</label>
-              <input type="text" class="Age" id="DAge" required>
+              <input type="text" class="Age" id="DAge" placeholder="Enter Your Age" required>
 
                 <label class="lbl">Gender</label>
                 <select id="Gen">
@@ -50,7 +50,7 @@
                  </select>
                  
                 <label for="DEducation" class="lbl">Education</label>
-                <input type="text" class="dedu" id="DEducation" required>
+                <input type="text" class="dedu" id="DEducation" placeholder="Qualification" required>
 
                 <label for="mob" class="lbl">Mobile Number</label>
                 <input type="tel" class="mob-no" id="mob" minlength="10" maxlength="10" placeholder="Enter Your Number" required>
@@ -66,23 +66,22 @@
                   
                 <label for="address" class="lbl">Address</label>
                 <textarea name="txtarea" id="address" cols="20" rows="4" placeholder="Enter Address"></textarea>
-            </div>
+           
+                <div class="btn-register">
+                  <button type="submit" onclick="getData()">Register Now</button>
+                </div>
+        
+                <div class="btn-refresh">
+                  <button onclick="clrData()">Refresh</button>
+                </div>
+        
+                <div class="btn-update">
+                  <button onclick="updateData()">Update</button>
+                </div>
+           
+              </div>
           </div>
        </div>          
-
-      <div class="btn-container">
-        <div class="btn-register">
-          <button type="submit" onclick="getData()">Register Now</button>
-        </div>
-
-        <div class="btn-refresh">
-          <button onclick="clrData()">Refresh</button>
-        </div>
-
-        <div class="btn-update">
-          <button onclick="updateData()">Update</button>
-        </div>
-      </div>
       
     </div>
 

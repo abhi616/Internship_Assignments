@@ -84,12 +84,13 @@ i:hover{
 
 
 .doctor-info{
-    width: 600px;
-    height: 1100px;
+    width: 750px;
+    height: 1200px;
     background-color: white;
     border-radius: 10px;
     margin-top: 40px;
-    margin-left: 450px;  
+    margin-left: 350px; 
+    margin-bottom: 50px; 
     padding: 10px;
     border: none;
     box-shadow: 12px 12px 2px 1px #51565a;
@@ -140,12 +141,6 @@ input:focus,.input:valid,select:focus{
 ::placeholder{
     font-weight: bold;
     padding-left: 10px;
-}
-
-.btn-container{
-    display: flex;
-    justify-content: center;
-    margin: 20px;
 }
 
 .btn-register button , .btn-refresh button,.btn-update button{
