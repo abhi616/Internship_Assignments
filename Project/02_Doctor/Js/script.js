@@ -1,9 +1,5 @@
 function getData(){
-    const id = document.getElementById('Did').value;
-    const fname = document.getElementById('DfName').value;
-    const mname = document.getElementById('DmName').value;
-    const surname = document.getElementById('DSurName').value;
-    const fullname = fname+" "+mname+" "+surname;
+    const fullname = document.getElementById('DfName').value;
     const dob = document.getElementById('Ddob').value;
     const age = document.getElementById('DAge').value;
     const gen = document.getElementById('Gen').value;
@@ -15,7 +11,6 @@ function getData(){
     const address = document.getElementById('address').value;
     alert(`Doctor Registered Successfully...
 
-Doctor ID : ${id}
 Doctor Name : ${fullname}
 DOB : ${dob}
 Age : ${age}
@@ -31,10 +26,7 @@ Address : ${address}`
 }
 
 function clrData(){
-    document.getElementById('Did').value = "";
     document.getElementById('DfName').value = "";
-    document.getElementById('DmName').value = "";
-    document.getElementById('DSurName').value = "";
     document.getElementById('Ddob').value = "";
     document.getElementById('DAge').value = "";
     document.getElementById('Gen').value = "";
@@ -44,5 +36,5 @@ function clrData(){
     document.getElementById('email').value = "";
     document.getElementById('aadhaar').value = "";
     document.getElementById('address').value = "";
-    document.getElementById('Did').focus(); 
+    document.getElementById('DfName').focus(); 
 }
