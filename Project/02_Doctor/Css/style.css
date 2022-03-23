@@ -19,6 +19,7 @@ body{
     height: 75px;
     margin: auto;
     background-color: #5e83e9;
+    /* position: fixed; */
 }
 
 .main-heading{
@@ -71,7 +72,18 @@ ul li a:hover{
     display: flex;
 }
 
-.personal-info{
+i{
+    padding-top: 15px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+i:hover{
+    color: #fff;
+}
+
+
+.doctor-info{
     width: 600px;
     height: 1100px;
     background-color: white;
@@ -79,9 +91,11 @@ ul li a:hover{
     margin-top: 40px;
     margin-left: 450px;  
     padding: 10px;
+    border: none;
+    box-shadow: 12px 12px 2px 1px #51565a;
 }
 
-.personal-info .head{
+.doctor-info .head{
     font-size: 25px;
     font-weight: 500;
     font-family: 'Kanit', sans-serif;
@@ -89,7 +103,7 @@ ul li a:hover{
     margin-bottom: 20px;
 }
 
-.personal-info .head::before{
+.doctor-info .head::before{
     content: '';
     position: absolute;
     left: 0;
@@ -106,7 +120,7 @@ input,select,textarea{
     margin: 20px 0 12px 0;
     font-weight: bold;
     margin-bottom: 20px;
-    border-bottom-width: 5px;
+    border-bottom-width: 7px;
 }
 
 textarea{
@@ -134,14 +148,15 @@ input:focus,.input:valid,select:focus{
     margin: 20px;
 }
 
-.btn-register button , .btn-refresh button,.btn-update button,.Doctor button{
+.btn-register button , .btn-refresh button,.btn-update button{
     width: 200px;
     height: 40px;
     margin: 20px;
     border-radius: 50px;
-    font-weight: bolder;
+    font-weight: bold;
     font-size: 20px;
-    background-color: #86A1EB;
+    font-family: 'Poppins', sans-serif;
+    background-color: #3464e9;
     color: #fafcff;
     cursor: pointer;
     border-style: none;
