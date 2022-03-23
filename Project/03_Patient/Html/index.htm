@@ -35,13 +35,13 @@
 
           <div class="Patient">
               <label class="lbl">Full Name</label>
-              <input type="text" class="dfname" id="DfName" autocomplete="Off" placeholder="Enter Full Name" required>
+              <input type="text" class="fname" id="fName" autocomplete="Off" placeholder="Enter Full Name" required>
     
               <label for="dob" class="lbl">DOB</label>
               <input type="date" class="Dob" id="dob" required>
           
               <label for="Age" class="lbl">Age</label>
-              <input type="text" class="Age" id="Age" required>
+              <input type="text" class="Age" id="Age" placeholder="Enter Your Age" required>
 
                 <label class="lbl">Gender</label>
                 <select id="Gen">
@@ -50,7 +50,7 @@
                  </select>
                  
                 <label for="Education" class="lbl">Education</label>
-                <input type="text" class="edu" id="Education" required>
+                <input type="text" class="edu" id="Education" placeholder="Qualification" required>
 
                 <label for="mob" class="lbl">Mobile Number</label>
                 <input type="tel" class="mob-no" id="mob" minlength="10" maxlength="10" placeholder="Enter Your Number" required>
@@ -84,22 +84,23 @@
           <div class="Patient">
           
             <label for="referedDoc" class="lbl">Refered Doctor</label>
-            <input type="text" class="refer" id="referedDoc">
+            <input type="text" class="refer" id="referedDoc" placeholder="Refered Doctor Name">
 
-            <label for="testcategory" class="lbl TClbl">Test Category</label>
-            <input type="text" name="testcat" class="testcat" id="testcategory">
+            <label for="testcategory" class="lbl">Test Category</label>
+            <input type="text" name="testcat" class="testcat" id="testcategory" placeholder="Enter Test Category">
        
-            <label for="testname" class="lbl Tlbl">Test Name</label>
-            <input type="text" name="test" class="test" id="testname">
+            <label for="testname" class="lbl">Test Name</label>
+            <input type="text" name="test" class="test" id="testname" placeholder="Enter Test Name">
    
-            <label for="totamt" class="lbl Plbl">Total Amount</label>
-            <input type="text" class="Amt" id="totamt" required>
+            <label for="totamt" class="lbl">Total Amount</label>
+            <input type="text" class="Amt" id="totamt" required placeholder="Enter Amount">
+
          
-            <label for="discount" class="lbl Tlbl">Discount</label>
-            <input type="text" name="discount" class="disc" id="discount">
+            <label for="discount" class="lbl">Discount</label>
+            <input type="text" name="discount" class="disc" id="discount" placeholder="Discount">
          
             <label for="payAmount" class="lbl">Paying Amount</label>
-            <input type="text" class="PayAmt" id="payamount" required> 
+            <input type="text" class="PayAmt" id="payamount" required placeholder="Paying Amount"> 
                 
             <div class="btn-addTest">
               <button onclick="clrData()">Add Test</button>
