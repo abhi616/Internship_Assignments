@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Kanit:wght@700&family=Oswald:wght@700&family=Poppins:wght@400;700&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Kanit:wght@700&family=Oswald:wght@700&family=Poppins:wght@400;700&family=Roboto&family=Staatliches&display=swap');
 
 *{
     margin: 0;
@@ -7,8 +7,8 @@
 }
 
 body{
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #90CEF5;
+    background: linear-gradient(to right top,#206DAB,#fff);
 }
 
 
@@ -16,7 +16,8 @@ body{
     width: 100%;
     height: 75px;
     margin: auto;
-    background-color: rgb(190, 219, 231);
+    background-color: #5e83e9;
+    /* position: fixed; */
 }
 
 .main-heading{
@@ -27,7 +28,7 @@ body{
     margin-top: 5px;
     padding-left: 20px;
     padding-top: 10px;
-    color: #dd6050;
+    color: white;
     font-size: 40px;
     font-family: 'Fredoka', sans-serif;
     font-weight: bold;
@@ -43,7 +44,6 @@ ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 400px;
 }
 
 ul li{
@@ -59,98 +59,87 @@ ul li a{
     color: rgb(22, 22, 22);
     font-family: Arial;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 ul li a:hover{
-    color: #6200ff;
+    color: white;
 }
 
-.heading{
-    text-align: center;
-    padding: 10px;
-    color: indigo;
+.container{
+   display: flex;
+}
+
+i{
+    padding-top: 15px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+i:hover{
+    color: #fff;
+}
+
+
+.patient-info,.Test-info{
+    width: 600px;
+    height: 1200px;
     background-color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 20px;
-
-}
-
-.personal-info,.Other-info,.Patient-other-info{
-    width: 1000px;
-    height: 600px;
-    border: solid yellowgreen 2px;
     border-radius: 10px;
-    margin-top: 20px;
-    margin-left: 250px;
-    text-align: center;
+    margin-top: 40px;
+    margin-left: 150px;  
     padding: 10px;
-    box-shadow: 10px 5px 5px rgb(32, 32, 32);
+    border: none;
+    box-shadow: 12px 12px 2px 1px #51565a;
+    margin-bottom: 50px;
 }
 
-.Patient-other-info{
-    height: 700px;
+.Test-info{
+    height: 800px;
+    margin-top: 200px;
+    margin-bottom: 50px;
+    margin-right: 150px;
 }
-
-.Patient-other-info h4{
-    font-weight: bold;
-    font-family: 'Fredoka', sans-serif;
-    font-size: 40px;
-    color: maroon;
-}
-
-.personal-info{
-    border-bottom: hidden;
-}
-
-.Other-info{
-    border-top: hidden;
-}
-
-.personal-info h5,.Other-info h5,.Patient-other-info h5{
-    padding: 10px;
-    font-weight: bold;
-    font-size: 22px;
-}
-
-.hr1,.Patient-other-info .hr1{
-    margin-top: 20px;
-}
-
-.hr2,.Patient-other-info .hr2{
+.patient-info .head,.Test-info .head{
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Kanit', sans-serif;
+    position: relative;
     margin-bottom: 20px;
 }
 
-.Patient{
-    padding: 10px;
+.patient-info .head::before,.Test-info .head::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: #5880ec;
 }
 
-.cmb h6{
+input,select,textarea{
+    height: 45px;
+    width: 100%;
+    padding-left: 10px;
+    margin: 20px 0 12px 0;
     font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+    border-bottom-width: 7px;
+}
+
+textarea{
+   padding-top: 10px;
+}
+
+input:focus,.input:valid,select:focus{
+    border-color: #2A8DDE;
 }
 
 .lbl{
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding-right: 20px;
-}
-
-input,.cmb select{
-    width: 250px;
-    height: 40px;
-    margin: 10px;
-    border-radius: 10px;
-    font-weight: bold;
-    font-family: 'Poppins', sans-serif;
-}
-
-.Tlbl{
-    margin-right: 50px;
-}
-
-.Plbl{
-    margin-right: 20px;
+    font-family: 'Roboto', sans-serif;
 }
 
 ::placeholder{
@@ -158,41 +147,26 @@ input,.cmb select{
     padding-left: 10px;
 }
 
-.btn-container{
-    display: flex;
-    justify-content: center;
-    margin: 20px;
-}
-
-.btn-register button , .btn-refresh button,.Patient button{
+.btn-register button , .btn-refresh button,.btn-addTest button{
     width: 200px;
     height: 40px;
     margin: 20px;
-    border-radius: 50px;
-    font-weight: bolder;
-    font-size: 20px;
-    background-color: black;
-    color: mediumspringgreen;
     cursor: pointer;
+    border-style: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #3464e9;
+    color: #fafcff;
+}
+
+.Patient{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 button:hover{
     border-color: whitesmoke;
-}
-
-.Patient .Email,.Patient .Address{
-      margin-left: 90px;
-}
-
-.Patient .Address{
-    height: 70px;
-}
-
-
-.Patient .Dob,.Patient .Age{
-    margin-left: 50px;
-}
-
-.cmb .lbl{
-    margin-right: 20px;
 }

@@ -66,3 +66,19 @@ function clrData(){
     
     document.getElementById('id').focus(); 
 }
+
+var content1 = document.getElementById('content-1');
+var content2 = document.getElementById('content-2');
+
+var btn1 = document.getElementById('btn-1');
+var btn2 = document.getElementById('btn-2');
+
+function openPatient(){
+    content1.style.transform = "translate(0)";
+    content2.style.transform = "translate(100%)";
+}
+
+function openTest(){
+    content1.style.transform = "translate(100%)";
+    content2.style.transform = "translate(0)";
+}
