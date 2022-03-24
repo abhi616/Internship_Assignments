@@ -9,17 +9,10 @@ function getData(){
     const email = document.getElementById('email').value;
     const aadhar = document.getElementById('aadhaar').value;
     const address = document.getElementById('address').value;
-    const allergy = document.getElementById('Allergy').value;
-    const refereddoc = document.getElementById('referedDoc').value;
-    const test = document.getElementById('testname').value;
-    const totamt = document.getElementById('totamt').value;
-    const disc = document.getElementById('discount').value;
-    const payamt = document.getElementById('payamount').value;
 
     alert(`Patient Registered Successfully...!!!
 
-Patient ID : ${id}
-Patient Name : ${fullname}
+Patient Name : ${fname}
 DOB : ${dob}
 Age : ${age}
 Gender : ${gen}
@@ -28,22 +21,31 @@ Mobile Number : ${mob}
 Alternate Number : ${alternateno}
 Email ID : ${email}
 Aadhaar Number : ${aadhar}
-Address : ${address}
-Allergy : ${allergy}
-Refered Doctor : ${refereddoc}
-Test Name : ${test}
-Total Amount : ${totamt}
-Discount : ${disc}
-Payment : ${payamt}`
+Address : ${address}`
 );
 
 }
 
+function getTest(){
+    const refereddoc = document.getElementById('referedDoc').value;
+    const testcat = document.getElementById('testcategory').value;
+    const test = document.getElementById('testname').value;
+    const totamt = document.getElementById('totamt').value;
+    const disc = document.getElementById('discount').value;
+    const payamt = document.getElementById('payamount').value;
+
+    alert(`Test Added Successfully...!!!!
+    
+Refered Doctor : ${refereddoc}
+Test Category : ${testcat}
+Test Name : ${test}
+Total Amount : ${totamt}
+Discount : ${disc}
+Payment : ${payamt}`);
+}
+
 function clrData(){
-    document.getElementById('id').value = "";
     document.getElementById('fName').value = "";
-    document.getElementById('mName').value = "";
-    document.getElementById('Surname').value = "";
     document.getElementById('dob').value = "";
     document.getElementById('Age').value = "";
     document.getElementById('Gen').value = "";
@@ -53,11 +55,18 @@ function clrData(){
     document.getElementById('email').value = "";
     document.getElementById('aadhaar').value = "";
     document.getElementById('address').value = "";
+    
+    document.getElementById('fName').focus(); 
+}
+
+
+function clrTestData(){
     document.getElementById('referedDoc').value = "";
+    document.getElementById('testcategory').value = "";
     document.getElementById('testname').value = "";
     document.getElementById('totamt').value = "";
     document.getElementById('discount').value = "";
     document.getElementById('payamount').value = "";
-    
-    document.getElementById('id').focus(); 
+
+    document.getElementById('referedDoc').focus();
 }
