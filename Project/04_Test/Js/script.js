@@ -1,5 +1,4 @@
 function getData(){
-    const id = document.getElementById('Did').value;
     const tcategory = document.getElementById('testCat').value;
     const tname = document.getElementById('testName').value;
     const tdesc = document.getElementById('testDesc').value;  
@@ -10,7 +9,6 @@ function getData(){
 
     alert(`Test Added Successfully...!!!
 
-Test ID : ${id}
 Test Category : ${tcategory}
 Test Name : ${tname}
 Description : ${tdesc}
@@ -23,7 +21,6 @@ Test Charges : ${tcharges}`
 }
 
 function clrData(){
-    document.getElementById('id').value = "";
     document.getElementById('testCat').value = "";
     document.getElementById('testName').value = "";
     document.getElementById('testDesc').value = "";
@@ -32,5 +29,5 @@ function clrData(){
     document.getElementById('unit').value = "";
     document.getElementById('testCharges').value ="";
 
-    document.getElementById('id').focus(); 
+    document.getElementById('testCat').focus(); 
 }

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Kanit:wght@700&family=Oswald:wght@700&family=Poppins:wght@400;700&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Kanit:wght@700&family=Oswald:wght@700&family=Poppins:wght@400;700&family=Roboto&family=Staatliches&family=Ubuntu:wght@300&display=swap');
 
 *{
     margin: 0;
@@ -7,7 +7,6 @@
 }
 
 body{
-    background-image: url(../Images/Test_Background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -17,7 +16,8 @@ body{
     width: 100%;
     height: 75px;
     margin: auto;
-    background-color: rgb(190, 219, 231);
+    background-color: #5e83e9;
+    /* position: fixed; */
 }
 
 .main-heading{
@@ -28,7 +28,7 @@ body{
     margin-top: 5px;
     padding-left: 20px;
     padding-top: 10px;
-    color: #dd6050;
+    color: white;
     font-size: 40px;
     font-family: 'Fredoka', sans-serif;
     font-weight: bold;
@@ -44,7 +44,6 @@ ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 400px;
 }
 
 ul li{
@@ -60,111 +59,148 @@ ul li a{
     color: rgb(22, 22, 22);
     font-family: Arial;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 ul li a:hover{
-    color: #6200ff;
+    color: white;
 }
 
-.heading{
-    text-align: center;
-    padding: 10px;
-    color: indigo;
+.container{
+    display: flex;
+}
+
+i{
+    padding: 8px;
+    cursor: pointer;
+}
+
+i:hover{
+    color: #fff;
+    background-color: black;
+    border-radius: 50px;
+}
+
+
+.test-info{
+    width: 750px;
+    height: 900px;
     background-color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 20px;
-
-}
-
-.Test-info{
-    width: 1000px;
-    height: 800px;
-    border: solid yellowgreen 2px;
     border-radius: 10px;
-    margin-top: 20px;
-    margin-left: 250px;
-    text-align: center;
+    margin-top: 40px;
+    margin-left: 350px; 
+    margin-bottom: 50px; 
     padding: 10px;
+    border: none;
+    box-shadow: 12px 12px 2px 1px #7c9bee;
 }
 
-.Test-info h5{
-    padding: 10px;
-    font-weight: bold;
-    font-size: 22px;
-}
-
-.hr1{
-    margin-top: 20px;
-}
-
-.hr2{
+.test-info .head{
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Kanit', sans-serif;
+    position: relative;
     margin-bottom: 20px;
 }
 
-.Test{
-    padding: 10px;
-}
-
-.lbl{
-    font-size: 20px;
-    font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding-right: 20px;
-    color: black;
+.test-info .head::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: #5880ec;
 }
 
 input{
-    width: 250px;
-    height: 40px;
-    margin: 10px;
-    border-radius: 10px;
+    height: 45px;
+    width: 100%;
+    padding-left: 10px;
+    margin: 20px 0 12px 0;
     font-weight: bold;
-    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+    border-bottom-width: 7px;
 }
 
-.btn-container{
-    display: flex;
-    justify-content: center;
-    margin: 20px;
+
+input:focus,.input:valid,select:focus{
+    border-color: #2A8DDE;
 }
 
-.btn-add button , .btn-refresh button,.btn-update button,.Test button{
+.lbl{
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+::placeholder{
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+button{
     width: 200px;
     height: 40px;
     margin: 20px;
     border-radius: 50px;
-    font-weight: bolder;
+    font-weight: bold;
     font-size: 20px;
-    background-color: black;
-    color: mediumspringgreen;
+    font-family: 'Poppins', sans-serif;
+    background-color: #3464e9;
+    color: #fafcff;
     cursor: pointer;
+    border-style: none;
+}
+
+.Test{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 button:hover{
     border-color: whitesmoke;
 }
 
-.Test .unit{
-      margin-right: 90px;
+
+.nav-bottom{
+    width: 100%;
+    height: 150px;
+    background-color: navy;
+    justify-items: center;
 }
 
-.charges{
-    margin-right: 60px;
+.para{
+    margin: 15px;
+    width: 600px;
+    color: white;  
+    margin-left: 500px;
 }
 
-.tname{
-    margin-right: 40px;
+h2{
+    padding: 5px;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
 }
 
-.Test .desc{
-    height: 70px;
+.para p{
+    font-family: 'Ubuntu', sans-serif;
+    padding-top: 5px;
 }
 
-
-.Test .Dob,.Test .Age{
-    margin-left: 50px;
+.icon{
+    display: flex;
+    justify-content: center;
 }
 
-.cmb .lbl{
-    margin-right: 20px;
+.icon i{
+    color: white;
+    padding: 10px;
+}
+
+.icon i:hover{
+    color: black;
+    background-color: white;
+    border-radius: 50px;
 }

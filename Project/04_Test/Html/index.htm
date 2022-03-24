@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Css/style.css">
+    <script src="https://kit.fontawesome.com/70a5890f20.js" crossorigin="anonymous"></script>
     <title>Test</title>
 </head>
 <body onload="clrData()">
@@ -15,88 +16,68 @@
     </div>
     <div class="menu">
         <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">SERVICES</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">Doctor</a></li>
+            <i class="fa-solid fa-user-doctor fa-2x"></i>
+            <li><a href="#">Patient</a></li>
+            <i class="fa-solid fa-hospital-user fa-2x"></i>
+            <li><a href="#">Test</a></li>
+            <i class="fa-solid fa-flask-vial fa-2x"></i>
+            <li><a href="#">Staff</a></li>
+            <i class="fa-solid fa-users fa-2x"></i>
         </ul>
     </div>
- </div>
+  </div>
 
     <div class="main-container">
-      <div class="head">
-         
-          <div class="heading">
-              <h1>Test Section</h1>
-          </div>
-         
-      </div>
-
        <div class="container">
-            <div class="Test-info">
-            <hr class="hr1"><h5>Test Information</h5><hr class="hr2">
-    
-            <div class="Test">
-                <label for="id" class="lbl">Test ID</label>
-                <input type="text" class="id" id="id" required>
+        <div class="test-info">
+          <h1 class="head">Add New Test</h1>
 
-                <button>Search</button>
-            </div>
+          <div class="Test">
+                    <label for="testCat" class="lbl">Test Category</label>
+                    <input type="text" id="testCat" required>
+
+                    <label for="testName" class="lbl tname">Test Name</label>
+                    <input type="text" id="testName" required>
             
-            <div class="Test">
-                <label for="testCat" class="lbl">Test Category</label>
-                <input type="text" id="testCat" required>
-            </div>
+                    <label for="testDesc" class="lbl">Test Description</label>
+                    <input type="text" class="desc" id="testDesc" required>
+            
+                    <label for="testLwrRange" class="lbl">Lower Range</label>
+                    <input type="text" id="testLwrRange" required>
 
-            <div class="Test">
-                <label for="testName" class="lbl tname">Test Name</label>
-                <input type="text" id="testName" required>
-            </div>
+                    <label for="testUprRange" class="lbl">Upper Range</label>
+                    <input type="text" id="testUprRange" required>
 
-            <div class="Test">
-                <label for="testDesc" class="lbl">Test Description</label>
-                <input type="text" class="desc" id="testDesc" required>
-            </div>
-
-            <div class="Test">
-                <label for="testLwrRange" class="lbl">Lower Range</label>
-                <input type="text" id="testLwrRange" required>
-            </div>
-
-            <div class="Test">
-                <label for="testUprRange" class="lbl">Upper Range</label>
-                <input type="text" id="testUprRange" required>
-            </div>
-
-            <div class="Test">
-                <label for="unit" class="lbl unit">Unit</label>
-                <input type="text" id="unit" required>
-            </div>
-
-            <div class="Test">
-                <label for="testCharges" class="lbl charges">Charges</label>
-                <input type="text" id="testCharges" required>
-            </div>
-
-      </div>  
-               
- </div>
-              
-
-      <div class="btn-container">
-        <div class="btn-add">
-          <button onclick="getData()">Add Test</button>
-        </div>
-
-        <div class="btn-refresh">
-          <button onclick="clrData()">Refresh</button>
-        </div>
-
-        <div class="btn-update">
-          <button onclick="updateData()">Update Test</button>
-        </div>
-      </div>
+                    <label for="unit" class="lbl unit">Unit</label>
+                    <input type="text" id="unit" required>
+        
+                    <label for="testCharges" class="lbl charges">Charges</label>
+                    <input type="text" id="testCharges" required>
+                
+                  <button type="submit" onclick="getData()">Add Test</button>
+                      
+                  <button onclick="clrData()">Refresh</button>
+                 
+                  <button onclick="updateData()">Update</button>          
+              </div>
+          </div>
+       </div>          
       
+    </div>
+    
+    <div class="nav-bottom">
+      <div class="para">
+        <h2>Get Stated With</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi iure, modi vero, itaque esse ex libero quisquam eum, ullam magni ut placeat.</p>
+      </div>
+      <div class="icon">
+        <i class="fa-brands fa-facebook fa-2x fa-white"></i>
+        <i class="fa-brands fa-twitter fa-2x"></i>
+        <i class="fa-brands fa-google-plus-g fa-2x"></i>
+        <i class="fa-brands fa-linkedin fa-2x"></i>
+        <i class="fa-brands fa-github fa-2x"></i>
+      </div> 
     </div>
 
     <script src="../Js/script.js"></script>
