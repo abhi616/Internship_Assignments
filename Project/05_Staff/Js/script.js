@@ -32,8 +32,6 @@ Shift Timing : ${shift}`
 
 function clrData(){
     document.getElementById('fName').value = "";
-    document.getElementById('mName').value = "";
-    document.getElementById('Surname').value = "";
     document.getElementById('dob').value = "";
     document.getElementById('Age').value = "";
     document.getElementById('Gen').value = "";
