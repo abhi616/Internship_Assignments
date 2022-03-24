@@ -1,9 +1,5 @@
 function getData(){
-    const id = document.getElementById('id').value;
     const fname = document.getElementById('fName').value;
-    const mname = document.getElementById('mName').value;
-    const surname = document.getElementById('Surname').value;
-    const fullname = fname+" "+mname+" "+surname;
     const dob = document.getElementById('dob').value;
     const age = document.getElementById('Age').value;
     const gen = document.getElementById('Gen').value;
@@ -18,8 +14,7 @@ function getData(){
 
     alert(`Staff Registered Successfully...
 
-Staff ID : ${id}
-Staff Name : ${fullname}
+Staff Name : ${fname}
 DOB : ${dob}
 Age : ${age}
 Gender : ${gen}
@@ -36,7 +31,6 @@ Shift Timing : ${shift}`
 }
 
 function clrData(){
-    document.getElementById('id').value = "";
     document.getElementById('fName').value = "";
     document.getElementById('mName').value = "";
     document.getElementById('Surname').value = "";
@@ -52,5 +46,5 @@ function clrData(){
     document.getElementById('Post').value = "";
     document.getElementById('Shift').value = "";
    
-    document.getElementById('id').focus(); 
+    document.getElementById('fName').focus(); 
 }
