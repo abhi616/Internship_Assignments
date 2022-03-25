@@ -5,31 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Css/style.css">
+    <script src="https://kit.fontawesome.com/70a5890f20.js" crossorigin="anonymous"></script>
     <title>LoginPage</title>
 </head>
 <body>
-    <div class="main">
-        <div class="frm-login">
-            <div class="head">
-                <h2>Login</h2>
+        <div class="container">
+            <input type="checkbox" id="flip">
+            <div class="cover">
+                <div class="front">
+                    <img src="../Images/login.jpg" alt="">
+                    
+                </div>
             </div>
-            <div class="frm-log">
-                <form action="">
-                    <div class="user">
-                        <lbl class="lbl-user">Username</lbl>
-                        <input type="text" class="frm-input" placeholder="Enter Your Username" minlength="5" maxlength="15" id="user" autocomplete="off">
-                    </div>
-                    <div class="pass">
-                        <lbl class="lbl-pass">Password</lbl>
-                        <input type="password" class="frm-input" placeholder="Enter Your Password" minlength="8" maxlength="16" id="pass" autocomplete="off">
-                    </div>
-                    <div class="btn">
-                        <button type="button" class="btn-login" onclick="login()">Login</button>
-                    </div>
-                </form>
-            </div>         
+            <form action="">
+              <div class="frm-container">
+                <div class="frm-login">
+                    <div class="head">Login</div>
+                     <div class="frm-inputs">
+                        <div class="input-box">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="text" class="frm-input" placeholder="Enter Your Username" minlength="5" maxlength="15" id="user" autocomplete="off">
+                        </div>
+    
+                        <div class="input-box">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" class="frm-input" placeholder="Enter Your Password" minlength="8" maxlength="16" id="pass" autocomplete="off">
+                        </div>
+    
+                        <div class="text"><a href="#">Forgot Password?</a></div>
+
+                        <div class="btn input-box">
+                            <input type="submit" value="Login">
+                        </div> 
+
+                        <div class="text">Don't have an account? <label for="flip">SignUp Now</label></div>
+                    </div>                                                       
+                  </div>
+    
+                  <div class="frm-signup">
+                    <div class="head">SignUp</div>
+                     <div class="frm-inputs">
+                        <div class="input-box">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" class="frm-input" placeholder="Enter Your Username" minlength="5" maxlength="15" id="user" autocomplete="off">
+                        </div>
+    
+                        <div class="input-box">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" class="frm-input" placeholder="Enter Your Email" id="user" autocomplete="Off">
+                        </div>
+    
+                        <div class="input-box">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" class="frm-input" placeholder="Enter Your Password" minlength="8" maxlength="16" id="pass" autocomplete="off">
+                        </div>
+    
+                        <div class="btn input-box">
+                            <input type="submit" value="SignUp">
+                        </div> 
+                        <div class="text">Already have an account? <label for="flip">Login Now</label></div>
+                    </div>                                                       
+                  </div>
+    
+              </div>
+           </form> 
         </div>
-    </div>
 
     <script src="../Js/script.js"></script>
 </body>
