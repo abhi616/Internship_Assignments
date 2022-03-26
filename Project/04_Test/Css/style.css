@@ -91,7 +91,6 @@ i:hover{
     margin-left: 350px; 
     margin-bottom: 50px; 
     padding: 10px;
-    border: none;
     box-shadow: 12px 12px 2px 1px #7c9bee;
 }
 
@@ -120,12 +119,13 @@ input{
     margin: 20px 0 12px 0;
     font-weight: bold;
     margin-bottom: 20px;
-    border-bottom-width: 7px;
+    border-radius: 10px;
 }
 
 
 input:focus,.input:valid,select:focus{
     border-color: #2A8DDE;
+    border-bottom-width: 7px;
 }
 
 .lbl{
