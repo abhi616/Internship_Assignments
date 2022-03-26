@@ -44,7 +44,7 @@
               <input type="text" class="Age" id="Age" placeholder="Enter Your Age" required>
 
                 <label class="lbl">Gender</label>
-                <select id="Gen">
+                <select id="Gen" required>
                   <option value="Male">Male</option>
                   <option value="Female">Female</option>
                  </select>
@@ -56,16 +56,16 @@
                 <input type="tel" class="mob-no" id="mob" minlength="10" maxlength="10" placeholder="Enter Your Number" required>
 
                 <label for="alternatemob" class="lbl">Alternate Number</label>
-                <input type="tel" class="alternate" id="alternatemob" minlength="10" maxlength="10" placeholder="Enter Alternate Number">  
+                <input type="tel" class="alternate" id="alternatemob" minlength="10" maxlength="10" placeholder="Enter Alternate Number" required>  
              
                 <label for="email" class="lbl">Email ID</label>
-                <input type="email" name="email" class="Email" id="email" placeholder="Enter Your Email" autocomplete="off">              
+                <input type="email" name="email" class="Email" id="email" placeholder="Enter Your Email" autocomplete="off" required>              
              
                 <label for="aadhaar" class="lbl">Aadhaar Number</label>
                 <input type="text" class="aadharno" id="aadhaar" placeholder="Enter Aadhaar Number" required>
                   
                 <label for="address" class="lbl">Address</label>
-                <textarea name="txtarea" id="address" cols="20" rows="4" placeholder="Enter Address"></textarea>       
+                <textarea name="txtarea" id="address" cols="20" rows="4" placeholder="Enter Address" required></textarea>       
               
                   <div class="btn-register">
                     <button onclick="getData()">Register Patient</button>
@@ -84,23 +84,23 @@
           <div class="Patient">
           
             <label for="referedDoc" class="lbl">Refered Doctor</label>
-            <input type="text" class="refer" id="referedDoc" placeholder="Refered Doctor Name">
+            <input type="text" class="refer" id="referedDoc" placeholder="Refered Doctor Name" required>
 
             <label for="testcategory" class="lbl">Test Category</label>
-            <input type="text" name="testcat" class="testcat" id="testcategory" placeholder="Enter Test Category">
+            <input type="text" name="testcat" class="testcat" id="testcategory" placeholder="Enter Test Category" required>
        
             <label for="testname" class="lbl">Test Name</label>
-            <input type="text" name="test" class="test" id="testname" placeholder="Enter Test Name">
+            <input type="text" name="test" class="test" id="testname" placeholder="Enter Test Name" required>
    
             <label for="totamt" class="lbl">Total Amount</label>
-            <input type="text" class="Amt" id="totamt" required placeholder="Enter Amount">
+            <input type="text" class="Amt" id="totamt" placeholder="Enter Amount" required>
 
          
             <label for="discount" class="lbl">Discount</label>
-            <input type="text" name="discount" class="disc" id="discount" placeholder="Discount">
+            <input type="text" name="discount" class="disc" id="discount" placeholder="Discount" required>
          
             <label for="payAmount" class="lbl">Paying Amount</label>
-            <input type="text" class="PayAmt" id="payamount" required placeholder="Paying Amount"> 
+            <input type="text" class="PayAmt" id="payamount" placeholder="Paying Amount" required> 
                 
             <div class="btn-addTest">
               <button onclick="getTest()">Add Test</button>
