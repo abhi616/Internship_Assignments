@@ -121,8 +121,6 @@ input,select,textarea{
     padding-left: 10px;
     margin: 20px 0 12px 0;
     font-weight: bold;
-    margin-bottom: 20px;
-    border-bottom-width: 7px;
 }
 
 textarea{
@@ -131,6 +129,8 @@ textarea{
 
 input:focus,.input:valid,select:focus{
     border-color: #2A8DDE;
+    margin-bottom: 20px;
+    border-bottom-width: 7px;
 }
 
 .lbl{
